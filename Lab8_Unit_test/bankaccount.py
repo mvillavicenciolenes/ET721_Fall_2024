@@ -1,4 +1,7 @@
 class BankAccount:
+    def get_balance(self):
+        return self.balance
+
     def __init__(self, owner, balance=0):
         self.owner = owner
         self.balance = balance
@@ -17,5 +20,3 @@ class BankAccount:
 
         self.balance -= amount
 
-    def get_balance(self):
-        return self.balance
