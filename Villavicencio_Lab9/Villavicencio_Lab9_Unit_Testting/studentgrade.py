@@ -34,6 +34,3 @@ def main():
 if __name__ == "__main__":
     main()  
 
-
-    #Villavicencio_Lab9_Unit_Testting/testingstudentgrade.py
-    #/Users/zaranoia/Desktop/School/ET721_Fall_2024/Villavicencio_Lab9/Villavicencio_Lab9_Unit_Testting/testingstudentgrade.py
