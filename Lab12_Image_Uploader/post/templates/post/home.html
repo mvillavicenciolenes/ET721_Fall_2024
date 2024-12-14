@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>Image Uploader - Home</title>
+</head>
+<body>
+    <header>
+        <h1>Image Uploader</h1>
+        <nav>
+            <a href="{% url 'add_post' %}">Upload Image</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Uploaded Images</h2>
+        <div class="image-gallery">
+            {% for post in posts %}
+                <div class="image-item">
+                    <h3>{{ post.title }}</h3>
+                    <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                </div>
+            {% empty %}
+                <p>No images uploaded yet.</p>
+            {% endfor %}
+        </div>
+    </main>
+</body>
+</html>
